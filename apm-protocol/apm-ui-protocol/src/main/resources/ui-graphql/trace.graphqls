@@ -41,9 +41,7 @@ type Span {
   traceId: ID!
   segmentId: ID!
   spanId: Int!
-  parentSpanId: Int!
   refs: [Ref!]!
-  applicationCode: String!
   startTime: Long!
   endTime: Long!
   operationName: String
@@ -82,7 +80,7 @@ type KeyValue {
 }
 
 type LogEntity {
-  time: Long!
+  time: String
   data: [KeyValue!]
 }
 

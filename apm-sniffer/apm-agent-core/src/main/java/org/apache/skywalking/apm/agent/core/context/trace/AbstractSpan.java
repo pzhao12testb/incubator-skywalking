@@ -116,6 +116,4 @@ public interface AbstractSpan {
      * @param ref segment ref
      */
     void ref(TraceSegmentRef ref);
-
-    AbstractSpan start(long starttime);
 }

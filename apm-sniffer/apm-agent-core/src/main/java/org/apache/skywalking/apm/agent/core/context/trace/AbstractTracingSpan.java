@@ -239,12 +239,6 @@ public abstract class AbstractTracingSpan implements AbstractSpan {
         return this;
     }
 
-    @Override
-    public AbstractSpan start(long startTime) {
-        this.startTime = startTime;
-        return this;
-    }
-
     public SpanObject.Builder transform() {
         SpanObject.Builder spanBuilder = SpanObject.newBuilder();
 
